@@ -1,16 +1,18 @@
 import React from 'react'
 import Button from './Button'
+import useDetails from '../context/Details';
 
-const NavItems = (props) => {
+const NavItems = () => {
+  const {details} = useDetails();
   return (
     <div>
         <ul style={{listStyle:"none"}}>
-            <li>{props.name}</li>
-            <li>{props.name}</li>
-            <li>{props.name}</li>
+            <li>{details}</li>
+            <li>{details}</li>
+            <li>{details}</li>
             
         </ul>
-        <Button name={props.name} />
+        <Button />
     </div>
   )
 }

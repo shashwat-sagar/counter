@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div style={{background:"red", textAlign:"center", fontSize:"40px"}}>
        
-        <NavItems name={details}/>
+        <NavItems />
     </div>
   )
 }
